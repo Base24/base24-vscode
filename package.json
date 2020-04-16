@@ -1,0 +1,44 @@
+{
+	"name": "theme-base24",
+	"version": "0.1.0",
+	"displayName": "Base24",
+	"homepage": "https://github.com/Base24/base24-vscode",
+	"description": "Base24 for VSCode",
+	"publisher": "Base24",
+	"license": "MIT",
+	"scripts": {
+		"list-themes": "node ./scripts/list.js",
+		"build": "node ./scripts/build.js",
+		"lint": "node ./scripts/lint.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"bugs": {
+		"url": "https://github.com/Base24/base24-vscode/issues"
+	},
+	"engines": {
+		"vscode": "^1.13.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"base24"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Base24",
+				"uiTheme": "vs-dark",
+				"path": "./theme/base24.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"js-yaml": "^3.13.1",
+		"vsce": "^1.74.0",
+		"prompt-sync": "^4.2.0"
+	}
+}
