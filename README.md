@@ -16,8 +16,7 @@ theme https://github.com/dracula/visual-studio-code
 
 ## Install using Git
 
-If you are a git user, you can install the theme and keep up to date by
-cloning the repo:
+Install the theme and keep up to date by cloning the repo:
 
 1. Clone the project to vscode
 	Windows
@@ -50,8 +49,17 @@ cloning the repo:
 
 ## Activating theme
 
-Run Visual Studio Code. The base24 Syntax Theme will be available from
+Run Visual Studio Code. The `Base24` Theme will be available from
 `File -> Preferences -> Color Theme` dropdown menu.
+
+Or open the command palette with `ctrl+shift+p` and type
+`Preferences: Color Theme` and select `Base24`
+
+Alternatively, paste the following snippet into `settings.json`
+
+```json
+"workbench.colorTheme": "Base24"
+```
 
 ## Screenshots
 
