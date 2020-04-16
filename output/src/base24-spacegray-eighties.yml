@@ -5,7 +5,7 @@ dracula:
     - &BG        '#212121'
     - &FG        '#c7c6c2'
     - &SELECTION '#15171c'
-    - &COMMENT   '#555555'
+    - &COMMENT   '#7b7a79'
     - &CYAN      '#57c2c0'
     - &GREEN     '#80a763'
     - &ORANGE    '#fdc253'
@@ -67,6 +67,8 @@ colors:
   terminal.ansiMagenta: *COLOR5
   terminal.ansiCyan: *COLOR6
   terminal.ansiWhite: *COLOR7
+  terminal.border: *FG
+  terminal.selectionBackground: *SELECTION
 
   # Contrast Colors
   contrastBorder: *BGDarker                                                     # An extra border around elements to separate them from others for greater contrast
@@ -141,7 +143,7 @@ colors:
   activityBar.activeBorder: !alpha [*PINK, 80]                                  # Activity Bar indicator color
   activityBar.activeBackground: !alpha [*PURPLE, 10]                            # Activity Bar indicator background color
   activityBarBadge.background: *PINK                                            # Activity notification badge background color
-  activityBarBadge.foreground: *FG                                              # Activity notification badge foreground color
+  activityBarBadge.foreground: *BG                                              # Activity notification badge foreground color
 
   # Side Bar
   sideBar.background: *BGDark                                                   # Side Bar background color
@@ -297,6 +299,7 @@ colors:
   # Panel Colors
   panel.background: *BG                                                         # Panel background color
   panel.border: *PURPLE                                                         # Panel border color on the top separating to the editor
+  panelInput.border: *FG
   panelTitle.activeBorder: *PINK                                                # Border color for the active panel title
   panelTitle.activeForeground: *FG                                              # Title color for the active panel
   panelTitle.inactiveForeground: *COMMENT                                       # Title color for the inactive panel
@@ -312,7 +315,7 @@ colors:
   statusBarItem.hoverBackground:                                                # Status Bar item background color when hovering
   statusBarItem.prominentBackground: *RED                                       # Status Bar prominent items background color. Prominent items stand out from other Status Bar entries to indicate importance
   statusBarItem.prominentHoverBackground: *ORANGE                               # Status Bar prominent items background color when hovering. Prominent items stand out from other Status Bar entries to indicate importance
-  statusBarItem.remoteForeground: *FG                                           # Background color for the remote indicator on the status bar
+  statusBarItem.remoteForeground: *BG                                           # Background color for the remote indicator on the status bar
   statusBarItem.remoteBackground: *PURPLE                                       # Foreground color for the remote indicator on the status bar
   statusBar.border:
 
@@ -354,7 +357,6 @@ colors:
 
   # Setting Editor
   settings.headerForeground:           *FG                                      # The foreground color for a section header or active title
-  settings.modifiedItemForeground:     *ORANGE                                  # The foreground color for a the modified setting indicator
   settings.modifiedItemIndicator:      *ORANGE                                  # The color of the line that indicates a modified setting
   settings.inactiveSelectedItemBorder:                                          # The color of the selected setting row border, when the settings list does not have focus
   settings.dropdownBackground:         *BGDark                                  # Dropdown background
