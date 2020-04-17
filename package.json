@@ -1,34 +1,34 @@
 {
     "name": "base24",
-	"version": "0.2.0",
-	"icon": "readme-assets/icons/square.png",
-	"displayName": "Base24",
-	"homepage": "https://github.com/Base24/base24-vscode",
-	"description": "Base24 for VSCode",
-	"publisher": "FredHappyface",
-	"license": "MIT",
-	"scripts": {
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"list-themes": "node ./scripts/list.js",
-		"build": "node ./scripts/build.js",
-		"buildall": "node ./scripts/buildall.js",
-		"lint": "node ./scripts/lint.js",
-		"eslint": "eslint ."
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Base24/base24-vscode.git"
-	},
-	"bugs": {
-		"url": "https://github.com/Base24/base24-vscode/issues"
-	},
-	"categories": [
-		"Themes"
-	],
-	"keywords": [
-		"base24"
-	],
+    "version": "0.2.1",
+    "icon": "readme-assets/icons/square.png",
+    "displayName": "Base24",
+    "homepage": "https://github.com/Base24/base24-vscode",
+    "description": "Base24 for VSCode",
+    "publisher": "FredHappyface",
+    "license": "MIT",
+    "scripts": {
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "list-themes": "node ./scripts/list.js",
+        "build": "node ./scripts/build.js",
+        "buildall": "node ./scripts/buildall.js",
+        "lint": "node ./scripts/lint.js",
+        "eslint": "eslint ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Base24/base24-vscode.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Base24/base24-vscode/issues"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+        "base24"
+    ],
     "engines": {
         "vscode": "^1.44.0"
     },
@@ -66,5 +66,8 @@
         "mocha": "^7.1.1",
         "typescript": "^3.8.3",
         "vscode-test": "^1.3.0"
+    },
+    "dependencies": {
+        "strip-json-comments": "^3.1.0"
     }
 }

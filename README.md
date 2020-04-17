@@ -10,7 +10,7 @@
 <!-- omit in TOC -->
 # base24-vscode
 
-<img src="https://github.com/Base24/base24-vscode/blob/master/readme-assets/icons/name.png" alt="Project Icon" width="750">
+<img src="https://raw.githubusercontent.com/Base24/base24-vscode/master/readme-assets/icons/name.png" alt="Project Icon" width="750">
 
 Base 24 themes for VSCode https://code.visualstudio.com/ based on the Dracula
 theme https://github.com/dracula/visual-studio-code
