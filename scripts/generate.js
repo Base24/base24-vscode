@@ -22,9 +22,9 @@ const { Type, Schema, load } = require('js-yaml');
  */
 
 const withAlphaType = new Type('!alpha', {
-    kind: 'sequence',
-    construct: ([hexRGB, alpha]) => hexRGB + alpha,
-    represent: ([hexRGB, alpha]) => hexRGB + alpha,
+	kind: 'sequence',
+	construct: ([hexRGB, alpha]) => hexRGB + alpha,
+	represent: ([hexRGB, alpha]) => hexRGB + alpha,
 });
 
 const schema = Schema.create([withAlphaType]);
@@ -44,17 +44,17 @@ module.exports = async (file) => {
 	}
 
 
-    /** @type {Theme} */
-    const base = load(yamlFile, { schema });
+	/** @type {Theme} */
+	const base = load(yamlFile, { schema });
 
-    // Remove nulls and other falsey values from colors
-    for (const key of Object.keys(base.colors)) {
-        if (!base.colors[key]) {
-            delete base.colors[key];
-        }
-    }
+	// Remove nulls and other falsey values from colors
+	for (const key of Object.keys(base.colors)) {
+		if (!base.colors[key]) {
+			delete base.colors[key];
+		}
+	}
 
-    return {
-        base
-    };
+	return {
+		base
+	};
 };

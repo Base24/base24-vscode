@@ -44,6 +44,7 @@ base24:
     - &BGLight       '#1c1c1c'
     - &BGDark        '#1c1c1c'
     - &BGDarker      '#1c1c1c'
+    - &SHADOW        '#444444'
 
 
 # User Interface (more info: https://code.visualstudio.com/docs/getstarted/theme-color-reference)
@@ -69,7 +70,7 @@ colors:
   terminal.ansiCyan: *COLOR6
   terminal.ansiWhite: *COLOR7
   terminal.border: *FG
-  terminal.selectionBackground: *SELECTION
+  terminal.selectionBackground: !alpha [ *SELECTION,   50 ]
 
   "textBlockQuote.background": *BGDark
   "textBlockQuote.border":
@@ -81,7 +82,7 @@ colors:
   # Base Colors
   focusBorder: *COMMENT                                                         # Overall border color for focused elements. This color is only used if not overridden by a component
   foreground: *FG                                                               # Overall foreground color. This color is only used if not overridden by a component
-  widget.shadow:                                                                # Shadow color of widgets such as Find/Replace inside the editor
+  widget.shadow: *SHADOW                                                        # Shadow color of widgets such as Find/Replace inside the editor
   selection.background: *BLUE                                                   # Background color of text selections in the workbench (for input fields or text areas, does not apply to selections within the editor and the terminal)
   errorForeground: *RED                                                         # Overall foreground color for error messages (this color is only used if not overridden by a component)
 
@@ -112,7 +113,7 @@ colors:
   inputValidation.errorBorder: *RED                                             # Input validation border color for error severity
 
   # Scroll Bar Control
-  scrollbar.shadow:                                                             # Scroll Bar shadow to indicate that the view is scrolled
+  scrollbar.shadow: *SHADOW                                                     # Scroll Bar shadow to indicate that the view is scrolled
   scrollbarSlider.activeBackground:                                             # Slider background color when active
   scrollbarSlider.background:                                                   # Slider background color
   scrollbarSlider.hoverBackground:                                              # Slider background color when hovering
@@ -331,13 +332,25 @@ colors:
   titleBar.inactiveForeground: *COMMENT                                         # Title Bar foreground when the window is inactive
 
   # Notification Dialog Colors
+  notificationCenter.border: *BGDark                                    # Notification Center border color.
+  notificationCenterHeader.foreground: *FG                              # Notification Center header foreground color.
+  notificationCenterHeader.background: *BG                              # Notification Center header background color.
+  notificationToast.border: *BGDark                                     # Notification toast border color.
+  notifications.foreground: *FG                                         # Notification foreground color.
+  notifications.background: *BG                                         # Notification background color.
+  notifications.border: *BGDark                                         # Notification border color separating from other notifications in the Notification Center.
+  notificationLink.foreground: *CYAN                                    # Notification links foreground color.
+  notificationsErrorIcon.foreground: *RED                               # The color used for the notification error icon.
+  notificationsWarningIcon.foreground: *YELLOW                          # The color used for the notification warning icon.
+  notificationsInfoIcon.foreground: *BLUE                               # The color used for the notification info icon.
+
   notification.background: *BG                                                  # Notifications background color
   notification.foreground: *FG                                                  # Notifications foreground color
   notification.buttonBackground: *SELECTION
   notification.buttonForeground: *FG
   notification.buttonHoverBackground: *LineHighlight
   notification.errorBackground: *RED
-  notification.errorForeground: *FG
+  notification.errorForeground: *BG
   notification.infoBackground: *BLUE
   notification.infoForeground: *BG
   notification.warningBackground: *YELLOW
@@ -356,8 +369,8 @@ colors:
   debugToolBar.background: *BGDark                                              # Debug toolbar background color
 
   # Welcome Page
-  welcomePage.buttonBackground: *BGDark                                         # Background color for the buttons on the Welcome page
-  welcomePage.buttonHoverBackground:                                            # Hover background color for the buttons on the Welcome page
+  welcomePage.buttonBackground: *SELECTION                                      # Background color for the buttons on the Welcome page
+  welcomePage.buttonHoverBackground: *LineHighlight                             # Hover background color for the buttons on the Welcome page
   walkThrough.embeddedEditorBackground: *BGDark                                 # Background color for the embedded editors on the Interactive Playground
 
   # Setting Editor
