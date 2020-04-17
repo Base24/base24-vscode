@@ -12,7 +12,7 @@ const { Type, Schema, load } = require('js-yaml');
 
 /**
  * @typedef {Object} Theme - Parsed theme object.
- * @prop {Record<'base'|'ansi'|'brightOther'|'other', string[]>} dracula - Dracula color variables.
+ * @prop {Record<'base'|'ansi'|'brightOther'|'other', string[]>} base24 - Base24 color variables.
  * @prop {Record<string, string|null|undefined>} colors - VSCode color mapping.
  * @prop {TokenColor[]} tokenColors - Textmate token colors.
  */
@@ -55,6 +55,6 @@ module.exports = async (file) => {
     }
 
     return {
-        base,
+        base
     };
 };

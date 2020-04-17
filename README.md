@@ -6,12 +6,44 @@
 [![Commit activity](https://img.shields.io/github/commit-activity/m/Base24/base24-vscode.svg?style=for-the-badge)](../../commits/master)
 [![Last commit](https://img.shields.io/github/last-commit/Base24/base24-vscode.svg?style=for-the-badge)](../../commits/master)
 
+
+<!-- omit in TOC -->
 # base24-vscode
 
-<img src="readme-assets/icons/name.png" alt="Project Icon" width="750">
+<img src="https://github.com/Base24/base24-vscode/blob/master/readme-assets/icons/name.png" alt="Project Icon" width="750">
 
 Base 24 themes for VSCode https://code.visualstudio.com/ based on the Dracula
 theme https://github.com/dracula/visual-studio-code
+
+- [Install with vscode](#install-with-vscode)
+- [Install using Git](#install-using-git)
+- [Activating theme](#activating-theme)
+- [Screenshots](#screenshots)
+	- [Atom One Dark](#atom-one-dark)
+	- [Atom One Light](#atom-one-light)
+	- [Atom One Black](#atom-one-black)
+- [Download](#download)
+	- [Clone](#clone)
+		- [Using The Command Line](#using-the-command-line)
+		- [Using GitHub Desktop](#using-github-desktop)
+	- [Download Zip File](#download-zip-file)
+- [Community Files](#community-files)
+	- [Licence](#licence)
+	- [Changelog](#changelog)
+	- [Code of Conduct](#code-of-conduct)
+	- [Contributing](#contributing)
+	- [Security](#security)
+
+## Install with vscode
+
+1. Search and install
+	```none
+	fredhappyface.base24
+	```
+2. Load theme
+	Open the command palette and type `Base24 Activate Theme` and select your
+	preferred theme
+3. Activate the theme (see [Activating theme](#activating-theme))
 
 
 ## Install using Git
@@ -106,7 +138,17 @@ More information can be found at
 ## Community Files
 ### Licence
 MIT License
-Copyright (c) Base24
+
+components not listed below, modifications to components below: <br>
+Copyright (c) 2020 Base24
+
+extension.ts: <br>
+Copyright (c) 2017 Sanders Lauture
+
+templates/default.mustache, scripts/build.js, scripts/generate.js,
+scripts/lint.js, known_issues.md: <br>
+Copyright (c) 2016 Dracula Theme
+
 (See the [LICENSE](/LICENSE.md) for more information.)
 
 ### Changelog

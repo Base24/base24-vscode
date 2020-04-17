@@ -11,7 +11,7 @@ if (!fs.existsSync(THEME_DIR)) {
 }
 
 module.exports = async () => {
-    const { base, soft } = await generate(file);
+    const { base } = await generate(file);
 
     return Promise.all([
         fs.promises.writeFile(

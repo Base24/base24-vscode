@@ -1,3 +1,4 @@
+const fs = require('fs');
 const https = require('https');
 const generate = require('./generate');
 
@@ -9,7 +10,7 @@ const NOT_THEME_KEYS = [
     'editor.tokenColorCustomizations',
 ];
 
-const file = process.argv.slice(2)[0];
+const file = fs.readdirSync('output/src')[0].replace(".yml", "");
 
 const get = url =>
     new Promise((resolve, reject) => {
