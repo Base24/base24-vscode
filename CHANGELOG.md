@@ -2,6 +2,9 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
+## 0.2.3 - 2020/04/18
+- problems → warnings are now yellow/ orange
+
 ## 0.2.2 - 2020/04/17
 - fixed terminal selection bug
 - added 'new' notification themes

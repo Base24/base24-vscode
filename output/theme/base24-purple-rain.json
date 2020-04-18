@@ -164,7 +164,7 @@
         "editorOverviewRuler.warningForeground": "#ffc40080",
         "editorOverviewRuler.infoForeground": "#00ddef80",
         "editorError.foreground": "#ff260d",
-        "editorWarning.foreground": "#00ddef",
+        "editorWarning.foreground": "#ffc400",
         "editorGutter.modifiedBackground": "#00ddef80",
         "editorGutter.addedBackground": "#9ae20480",
         "editorGutter.deletedBackground": "#ff260d80",

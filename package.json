@@ -1,6 +1,6 @@
 {
     "name": "base24",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "icon": "readme-assets/icons/square.png",
     "displayName": "Base24",
     "homepage": "https://github.com/Base24/base24-vscode",
@@ -8,8 +8,6 @@
     "publisher": "FredHappyface",
     "license": "MIT",
     "scripts": {
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
         "list-themes": "node ./scripts/list.js",
         "build": "node ./scripts/build.js",
         "buildall": "node ./scripts/buildall.js",
