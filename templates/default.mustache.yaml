@@ -1,6 +1,6 @@
-name: {{scheme-name}}
+name: '{{scheme-name}}'
 semanticClass: theme.{{scheme-slug}}
-base24:
+.base24:
   base:
     - &BG           '#{{base00-hex}}'
     - &FG           '#{{base05-hex}}'
