@@ -34,18 +34,21 @@ module.exports = async (file) => {
 	let yamlFile;
 	try{
 		yamlFile = await readFile(
-			join(__dirname, '..', 'output/src', file + '.yml'),
+			file,
 			'utf-8'
 		);
 	}
 	catch(error){
-		console.log("unknown scheme (be sure to omit the file extension)")
+		console.log("error reading template:", error)
 		process.exit()
 	}
 
 
 	/** @type {Theme} */
 	const base = load(yamlFile, { schema });
+
+	// Remove .base24 (YAML anchor definitions)
+	delete base['.base24'];
 
 	// Remove nulls and other falsey values from colors
 	for (const key of Object.keys(base.colors)) {

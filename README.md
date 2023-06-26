@@ -63,20 +63,9 @@ Install the theme and keep up to date by cloning the repo:
 	```
 2. Set up the project and build the themes
 	```bash
-	npm install
 	./dropin.py
 	./base24 update
 	./base24 build
-	```
-3. (optional) list the available themes
-	```bash
-	npm run list
-	```
-4. Build your preferred theme from the list of themes
-
-	e.g.
-	```bash
-	npm run build base24-one-dark
 	```
 
 ## Activating theme
