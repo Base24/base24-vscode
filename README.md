@@ -1,10 +1,9 @@
-[![Github top language](https://img.shields.io/github/languages/top/Base24/base24-vscode.svg?style=for-the-badge)](../../)
-[![Codacy grade](https://img.shields.io/codacy/grade/[codacy-proj-id].svg?style=for-the-badge)](https://www.codacy.com/manual/Base24/base24-vscode)
-[![Repository size](https://img.shields.io/github/repo-size/Base24/base24-vscode.svg?style=for-the-badge)](../../)
-[![Issues](https://img.shields.io/github/issues/Base24/base24-vscode.svg?style=for-the-badge)](../../issues)
-[![License](https://img.shields.io/github/license/Base24/base24-vscode.svg?style=for-the-badge)](/LICENSE.md)
-[![Commit activity](https://img.shields.io/github/commit-activity/m/Base24/base24-vscode.svg?style=for-the-badge)](../../commits/master)
-[![Last commit](https://img.shields.io/github/last-commit/Base24/base24-vscode.svg?style=for-the-badge)](../../commits/master)
+[![Github top language](https://img.shields.io/github/languages/top/Base24/base24-vscode.svg?style=for-the-badge&cacheSeconds=28800)](../../)
+[![Codacy grade](https://img.shields.io/codacy/grade/[codacy-proj-id].svg?style=for-the-badge&cacheSeconds=28800)](https://www.codacy.com/manual/Base24/base24-vscode)
+[![Issues](https://img.shields.io/github/issues/Base24/base24-vscode.svg?style=for-the-badge&cacheSeconds=28800)](../../issues)
+[![License](https://img.shields.io/github/license/Base24/base24-vscode.svg?style=for-the-badge&cacheSeconds=28800)](/LICENSE.md)
+[![Commit activity](https://img.shields.io/github/commit-activity/m/Base24/base24-vscode.svg?style=for-the-badge&cacheSeconds=28800)](../../commits/master)
+[![Last commit](https://img.shields.io/github/last-commit/Base24/base24-vscode.svg?style=for-the-badge&cacheSeconds=28800)](../../commits/master)
 
 
 <!-- omit in TOC -->
