@@ -1,71 +1,94 @@
 {
-    "name": "base24",
-    "version": "0.2.3",
-    "icon": "readme-assets/icons/square.png",
-    "displayName": "Base24",
-    "homepage": "https://github.com/Base24/base24-vscode",
-    "description": "Base24 for VSCode",
-    "publisher": "FredHappyface",
-    "license": "MIT",
-    "scripts": {
-        "list-themes": "node ./scripts/list.js",
-        "build": "node ./scripts/build.js",
-        "buildall": "node ./scripts/buildall.js",
-        "lint": "node ./scripts/lint.js",
-        "eslint": "eslint ."
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Base24/base24-vscode.git"
-    },
-    "bugs": {
-        "url": "https://github.com/Base24/base24-vscode/issues"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "keywords": [
-        "base24"
-    ],
-    "engines": {
-        "vscode": "^1.44.0"
-    },
-    "activationEvents": [
-        "onCommand:base24.activateTheme",
-        "onCommand:base24.deactivateTheme"
-    ],
-    "main": "./extension.js",
-    "contributes": {
-        "commands": [
-            {
-                "command": "base24.activateTheme",
-                "title": "Base24 Activate Theme"
-            },
-            {
-                "command": "base24.deactivateTheme",
-                "title": "Base24 Deactivate Theme"
-            }
-        ],
-        "themes": [
-            {
-                "label": "Base24",
-                "uiTheme": "vs-dark",
-                "path": "./theme/base24.json"
-            }
-        ]
-    },
-    "devDependencies": {
-        "@types/vscode": "^1.44.0",
-        "@types/glob": "^7.1.1",
-        "@types/mocha": "^7.0.2",
-        "@types/node": "^13.11.0",
-        "eslint": "^6.8.0",
-        "glob": "^7.1.6",
-        "mocha": "^10.2.0",
-        "typescript": "^3.8.3",
-        "vscode-test": "^1.3.0"
-    },
-    "dependencies": {
-        "strip-json-comments": "^3.1.0"
-    }
+  "name": "base24",
+  "version": "0.3.0",
+  "icon": "readme-assets/icons/square.png",
+  "displayName": "Base24 Tinted Themes",
+  "description": "Base24 for VSCode",
+  "publisher": "FredHappyface",
+  "license": "MIT",
+  "homepage": "https://github.com/Base24/base24-vscode",
+  "repository": "https://github.com/Base24/base24-vscode",
+  "bugs": "https://github.com/Base24/base24-vscode/issues",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "base24",
+    "color"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "update:packagejson:themes": "node ./scripts/updateWithLatestThemes.js",
+    "update:packagejson:version": "node ./scripts/minorVersionBump.js"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
+    "eslint": "^8.56.0",
+    "jsonc-parser": "^3.2.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "base24-brogrammer.",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24-brogrammer..json"
+      },
+      {
+        "label": "base24-chalk.",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24-chalk..json"
+      },
+      {
+        "label": "base24-dracula.",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24-dracula..json"
+      },
+      {
+        "label": "base24-espresso.",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24-espresso..json"
+      },
+      {
+        "label": "base24-flat.",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24-flat..json"
+      },
+      {
+        "label": "base24-framer.",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24-framer..json"
+      },
+      {
+        "label": "base24-github.",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24-github..json"
+      },
+      {
+        "label": "base24-hardcore.",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24-hardcore..json"
+      },
+      {
+        "label": "base24-one-black.",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24-one-black..json"
+      },
+      {
+        "label": "base24-one-dark.",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24-one-dark..json"
+      },
+      {
+        "label": "base24-one-light.",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base24-one-light..json"
+      }
+    ]
+  }
 }
