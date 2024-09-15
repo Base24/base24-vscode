@@ -1,3 +1,34 @@
+
+========================= No Longer Supported =========================
+
+**This project has reached the end of development and is no longer
+supported**
+
+## What Does This Mean Now?
+
+- The repository, including issues, pull requests, labels, milestones, projects,
+  wiki, releases, commits, tags, branches, reactions, and comments, has
+  transitioned into a read-only state.
+- While active contributions and changes are no longer accepted, you can still
+  fork and clone the repository. The project's original license remains in effect.
+
+## What Does This Mean for the Future?
+
+- The repository is scheduled for permanent deletion on 31/06/2025. We
+  encourage you to download any materials or resources you may need from the
+  repository before this date.
+- While this project is unlikely to be un-archived, the possibility remains open,
+  albeit with minimal probability.
+
+## What to use instead?
+
+https://github.com/tinted-theming/tinted-vscode
+
+========================= No Longer Supported =========================
+
+
+
+
 [![Github top language](https://img.shields.io/github/languages/top/Base24/base24-vscode.svg?style=for-the-badge&cacheSeconds=28800)](../../)
 [![Codacy grade](https://img.shields.io/codacy/grade/[codacy-proj-id].svg?style=for-the-badge&cacheSeconds=28800)](https://www.codacy.com/manual/Base24/base24-vscode)
 [![Issues](https://img.shields.io/github/issues/Base24/base24-vscode.svg?style=for-the-badge&cacheSeconds=28800)](../../issues)
